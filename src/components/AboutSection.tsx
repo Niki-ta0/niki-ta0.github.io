@@ -1,95 +1,72 @@
-import { Shield, Server, Cloud, Terminal } from 'lucide-react';
+import { Network, Shield, Server, Terminal } from 'lucide-react';
 
 const highlights = [
   {
+    icon: Network,
+    title: 'Network Infrastructure',
+    description: 'VLANs, routing, switching, pfSense firewall configuration',
+  },
+  {
     icon: Shield,
-    title: 'Cyber Security',
-    description: 'Vulnerability analysis, penetration testing, and security monitoring',
+    title: 'Cybersecurity',
+    description: 'Attack simulation, memory forensics, MITRE ATT&CK mapping',
   },
   {
     icon: Server,
-    title: 'Networking',
-    description: 'TCP/IP, routing, switching, and network infrastructure',
-  },
-  {
-    icon: Cloud,
-    title: 'Cloud Computing',
-    description: 'Cloud fundamentals, virtualization, and AWS basics',
+    title: 'Systems Administration',
+    description: 'Windows Server, Active Directory, Linux environments',
   },
   {
     icon: Terminal,
-    title: 'IT Administration',
-    description: 'Windows Server, Linux, Active Directory management',
+    title: 'Automation',
+    description: 'Ansible playbooks, Docker, Git-based workflows',
   },
 ];
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section-padding relative">
+    <section id="about" className="section-padding">
       <div className="container-custom">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <span className="font-mono text-primary text-sm mb-4 block">
-            // About Me
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Passionate <span className="gradient-text">IT Professional</span>
+        <div className="mb-12">
+          <span className="text-primary text-sm font-medium mb-2 block">About</span>
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Professional Summary
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-5 gap-12">
           {/* Left Content */}
-          <div className="space-y-6">
+          <div className="lg:col-span-3 space-y-5">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm an IT student with a deep passion for <span className="text-primary font-medium">Networking</span>, 
-              <span className="text-primary font-medium"> Cyber Security</span>, 
-              <span className="text-primary font-medium"> Cloud Computing</span>, and 
-              <span className="text-primary font-medium"> IT Administration</span>.
+              I am a computer networking and cybersecurity student with strong hands-on experience 
+              in building and securing enterprise-style environments.
             </p>
             
             <p className="text-muted-foreground leading-relaxed">
-              My journey in technology is driven by curiosity and a desire to understand how systems work—and 
-              more importantly, how to secure them. I've developed hands-on experience working with virtual labs, 
-              servers, Active Directory environments, Linux systems, Windows Server, firewalls, and various 
-              security tools.
+              My focus areas include network infrastructure (VLANs, switching, routing, firewalls), 
+              Active Directory administration, Linux and Windows server environments, cybersecurity 
+              attack simulation, digital forensics, and network automation using Ansible.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              I'm particularly interested in learning real-world enterprise infrastructure and security 
-              operations. My goal is to contribute to building robust, secure systems that organizations 
-              can rely on.
+              I emphasize practical lab-based learning, open-source tools, and real-world 
+              enterprise-style environments. Currently completing my final year at London 
+              Metropolitan University through Islington College.
             </p>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 pt-6">
-              <div className="text-center p-4 rounded-lg bg-secondary/50 border border-border">
-                <div className="text-2xl md:text-3xl font-bold gradient-text">5+</div>
-                <div className="text-sm text-muted-foreground">Projects</div>
-              </div>
-              <div className="text-center p-4 rounded-lg bg-secondary/50 border border-border">
-                <div className="text-2xl md:text-3xl font-bold gradient-text">10+</div>
-                <div className="text-sm text-muted-foreground">Tools</div>
-              </div>
-              <div className="text-center p-4 rounded-lg bg-secondary/50 border border-border">
-                <div className="text-2xl md:text-3xl font-bold gradient-text">3+</div>
-                <div className="text-sm text-muted-foreground">Certs</div>
-              </div>
-            </div>
           </div>
 
-          {/* Right Content - Highlights Grid */}
-          <div className="grid sm:grid-cols-2 gap-4">
-            {highlights.map((item, index) => (
+          {/* Right Content - Highlights */}
+          <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+            {highlights.map((item) => (
               <div
                 key={item.title}
-                className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 card-elevated hover:-translate-y-1"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="group p-5 rounded-xl border border-border bg-card card-hover"
               >
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="w-6 h-6 text-primary" />
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
+                  <item.icon className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
+                <h3 className="font-semibold mb-1">
                   {item.title}
                 </h3>
                 <p className="text-sm text-muted-foreground">
