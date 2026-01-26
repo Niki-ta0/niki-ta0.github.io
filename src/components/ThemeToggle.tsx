@@ -1,12 +1,10 @@
 import { Moon, Sun } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { Button } from './ui/button';
 
 const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
-    // Check for saved preference or system preference
     const saved = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
@@ -32,11 +30,9 @@ const ThemeToggle = () => {
   };
 
   return (
-    <Button
-      variant="ghost"
-      size="icon"
+    <button
       onClick={toggleTheme}
-      className="fixed bottom-6 right-6 z-50 rounded-full bg-card border border-border shadow-lg hover:border-primary"
+      className="fixed bottom-6 right-6 p-3 rounded-full bg-card border border-border shadow-lg hover:border-primary/50 transition-all z-50"
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
     >
       {isDark ? (
@@ -44,7 +40,7 @@ const ThemeToggle = () => {
       ) : (
         <Moon className="w-5 h-5 text-primary" />
       )}
-    </Button>
+    </button>
   );
 };
 
