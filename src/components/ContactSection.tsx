@@ -14,14 +14,14 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/nikitabhandari',
-    href: '#',
+    value: 'linkedin.com/in/nikita-bhandari-~-',
+    href: 'https://www.linkedin.com/in/nikita-bhandari-~-/',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/nikitabhandari',
-    href: '#',
+    value: 'github.com/Niki-ta0',
+    href: 'https://github.com/Niki-ta0',
   },
   {
     icon: MapPin,
@@ -30,6 +30,7 @@ const contactInfo = [
     href: null,
   },
 ];
+
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
