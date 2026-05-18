@@ -47,7 +47,7 @@ const HeroSection = () => {
             <div className="flex items-center gap-3 animate-slide-up delay-500">
               <span className="text-sm text-muted-foreground mr-2">Find me on</span>
               <a
-                href="#"
+                href="https://github.com/Niki-ta0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
@@ -56,7 +56,7 @@ const HeroSection = () => {
                 <Github className="w-4 h-4" />
               </a>
               
-                href="#"
+                href="https://www.linkedin.com/in/nikita-bhandari-~-/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
