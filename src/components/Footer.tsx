@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex items-center gap-3">
             <a
-              href="#"
+              href="https://github.com/Niki-ta0"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/5 transition-colors"
@@ -26,7 +26,7 @@ const Footer = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/nikita-bhandari-~-/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/5 transition-colors"
@@ -64,3 +64,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
