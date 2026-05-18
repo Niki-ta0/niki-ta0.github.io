@@ -55,7 +55,7 @@ const HeroSection = () => {
               >
                 <Github className="w-4 h-4" />
               </a>
-              
+              <a
                 href="https://www.linkedin.com/in/nikita-bhandari-~-/"
                 target="_blank"
                 rel="noopener noreferrer"
