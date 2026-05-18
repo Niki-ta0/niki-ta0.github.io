@@ -1,19 +1,20 @@
-import { Network, Search, Shield, Lock, Key } from 'lucide-react';
+import { ShieldAlert, Search, Shield, Lock, Key } from 'lucide-react';
 
 const projects = [
   {
-    icon: Network,
-    title: 'Luminet – Ansible-Powered Network Automation Dashboard',
+    icon: ShieldAlert,
+    title: 'Redefining AD Security: Lightweight Threat Detection with Wazuh and Sysmon',
     badge: 'Final Year Project',
-    description: 'A web-based, open-source network administration toolkit focused on Layer-2 automation with multi-vendor device support.',
+    description: 'A hybrid Active Directory threat detection and response system that simulates real-world attacks mapped to the MITRE ATT&CK framework, using Wazuh and Sysmon for lightweight, automated detection and alerting.',
     features: [
-      'Multi-vendor support (Cisco, Juniper, MikroTik)',
-      'VLAN and port configuration via Ansible',
-      'Git-backed configuration version control',
-      'Role-based access control (Admin/Operator)',
-      'Configuration backup and rollback',
+      'Simulated Kerberoasting, Pass-the-Hash, DCSync, and Golden Ticket attacks',
+      'Wazuh SIEM deployed on Azure Ubuntu for centralised log analysis',
+      'Sysmon-enhanced Windows event logging on domain controller and endpoint',
+      'Custom Wazuh rules mapped to MITRE ATT&CK techniques',
+      'Automated Slack and email alerting via Wazuh integrations',
+      'Active Response for automated threat containment',
     ],
-    technologies: ['Ansible', 'Python', 'Django', 'Git', 'YAML', 'Cisco IOS', 'JunOS'],
+    technologies: ['Wazuh', 'Sysmon', 'Windows Server 2022', 'Azure', 'MITRE ATT&CK', 'Kali Linux', 'Active Directory', 'VMware'],
   },
   {
     icon: Search,
