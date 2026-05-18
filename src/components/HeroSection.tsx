@@ -55,7 +55,7 @@ const HeroSection = () => {
               >
                 <Github className="w-4 h-4" />
               </a>
-              <a
+              
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,6 +64,7 @@ const HeroSection = () => {
               >
                 <Linkedin className="w-4 h-4" />
               </a>
+              
               <a
                 href="mailto:nikitachhettri17@gmail.com"
                 className="p-2.5 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
